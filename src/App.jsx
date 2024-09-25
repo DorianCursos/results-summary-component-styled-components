@@ -1,4 +1,6 @@
-import Button from './components/button/Button';
+import CardResults from './components/card-results/CardResults';
+import CardSummary from './components/card-summary/CardSummary';
+import Cards from './components/cards/Cards';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
@@ -6,8 +8,10 @@ const App = () => {
 		<div>
 			<GlobalStyles />
 			<h1>Curso de React</h1>
-			<Button color='steelblue'>Click Me!</Button>
-			<Button color='#f0f'>Click Me!</Button>
+			<Cards>
+				<CardResults />
+				<CardSummary />
+			</Cards>
 		</div>
 	);
 };
